@@ -133,3 +133,71 @@ h4 {
 .blue-color {
   color: #03a9f4;
 }
+
+.about {
+  margin-bottom: 50px;
+}
+
+.about:last-child {
+  margin-bottom: 0;
+}
+
+.title2 {
+  color: #003147;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+p {
+  color: #333;
+  font-size: 18px;
+}
+
+.references {
+  color: #333;
+}
+
+.about ul li {
+  padding-top: 5px;
+}
+
+.interest ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.interest ul li {
+  list-style: none;
+  color: #333;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+.interest ul li .fa {
+  color: #03a9f4;
+  font-size: 18px;
+  width: 20px;
+}
+
+.list-padding {
+  padding-left: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    grid-template-columns: 1fr;
+    padding: 3rem;
+    gap: 0rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .interest ul {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
